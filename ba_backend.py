@@ -11,7 +11,7 @@ CORS(app)
 def home():
     return render_template("index.html")
 
-path = 'D:\\important shit\\Python shit\\Desmos_Pixelart\\bad apple'
+path = 'link to folder with pics'
 
 lr = np.array([0, 0, 0])
 ur = np.array([250, 250, 250])
