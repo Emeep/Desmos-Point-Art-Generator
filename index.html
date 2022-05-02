@@ -24,11 +24,13 @@
 
     function changeGraph(key, latex)
     {
-        while (key > 0) {
+        while (key > 0)
+        {
             calculator.removeExpression({ id: 'expr-' + key });
             key--;
         }
-        for (var expr of latex) {
+        for (var expr of latex)
+        {
             console.log(expr);
             key++;
             calculator.setExpression({ id: 'expr-' + key, latex: expr, color: '#000000' });
@@ -42,7 +44,8 @@
         var frame = 0;
 
         setInterval(function() {
-            if (frame < latexFrames.length) {
+            if (frame < latexFrames.length)
+            {
                 key = changeGraph(key, latexFrames[frame]);
                 frame++;
             }
